@@ -1,10 +1,78 @@
-body {
+.body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url("asset/image/pexels-pixabay-40896.jpg") no-repeat center center fixed;
+    background: url("../image/pexels-pixabay-40896.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: rgb(223, 1, 1);
+  padding: 5px;
+}
+
+.nav-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding: 5px 0;
+}
+
+.navbar-menu li a:hover {
+  color: #ff9800;
+  border-bottom: 2px solid #ff9800;
 }
