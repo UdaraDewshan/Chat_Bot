@@ -1,0 +1,121 @@
+ body {
+     margin: 0;
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+     background: linear-gradient(135deg, #05640d, #058d39);
+     color: #fff;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 40px 20px;
+ }
+
+ .services-card {
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(15px);
+     border-radius: 20px;
+     padding: 40px;
+     max-width: 1000px;
+     width: 100%;
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+     text-align: center;
+     color: #fff;
+ }
+
+ .services-card h1 {
+     font-weight: bold;
+     font-size: 2.4rem;
+     margin-bottom: 25px;
+ }
+
+ .service-box {
+     background: rgba(255, 255, 255, 0.15);
+     padding: 25px;
+     border-radius: 16px;
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .service-box:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+ }
+
+ .service-icon {
+     font-size: 40px;
+     margin-bottom: 15px;
+     color: #2ecc71;
+ }
+
+ .service-box h3 {
+     font-size: 1.4rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+ }
+
+ .service-box p {
+     font-size: 1rem;
+     line-height: 1.6;
+     color: #f0f0f0;
+ }
+
+ .row {
+     row-gap: 25px;
+ }
+
+
+
+ .navbar {
+     background: transparent;
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+     border-radius: 0 0 20px 20px;
+     padding: 6px 0;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     transition: 0.4s;
+ }
+
+ .navbar:hover {
+     transform: translateY(0px);
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+ }
+
+ .navbar-brand span {
+     background: -webkit-linear-gradient(#fff, #d1f7d1);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 28px;
+     font-weight: bold;
+     letter-spacing: 2px;
+ }
+
+ .nav .nav-link {
+     color: #ffffff;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 8px 15px;
+     margin: 0 6px;
+     border-radius: 10px;
+     transition: 0.3s ease;
+ }
+
+ .nav .nav-link:hover {
+     background: rgba(255, 255, 255, 0.2);
+     color: #d1f7d1;
+     transform: translateY(-2px);
+ }
+
+ .nav .nav-link.active {
+     background: rgba(255, 255, 255, 0.25);
+     color: #27cd2a;
+     font-weight: bold;
+ }
+
+ .logo-img {
+     height: 46px;
+     width: 46px;
+     border-radius: 12px;
+     object-fit: contain;
+     padding: 4px;
+     background: #fff;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+ }
