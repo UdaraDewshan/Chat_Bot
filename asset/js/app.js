@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 
 const messagesDiv = document.getElementById("messages");
 const inputEl = document.getElementById("input");
