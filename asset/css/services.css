@@ -80,13 +80,17 @@
  }
 
  .navbar-brand span {
-     background: -webkit-linear-gradient(#fff, #d1f7d1);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-size: 28px;
-     font-weight: bold;
-     letter-spacing: 2px;
- }
+    background: linear-gradient(#fff, #d1f7d1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
 
  .nav .nav-link {
      color: #ffffff;

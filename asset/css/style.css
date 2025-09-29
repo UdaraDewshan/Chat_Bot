@@ -1,5 +1,6 @@
-
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .bg-chat {
   background: url("../image/pexels-pixabay-40896.jpg") no-repeat center center fixed;
@@ -14,7 +15,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
@@ -35,13 +36,17 @@
 }
 
 .navbar-brand span {
-  background: -webkit-linear-gradient(#fff, #d1f7d1);
+  background: linear-gradient(#fff, #d1f7d1);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 2px;
+  display: inline-block;
 }
+
 
 .nav .nav-link {
   color: #ffffff;
@@ -78,7 +83,7 @@
 
 .chat-card {
   border: none;
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
   border-radius: 16px;
 }
 
@@ -100,7 +105,7 @@
   line-height: 1.4;
   font-size: 15px;
   word-wrap: break-word;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -127,42 +132,54 @@
 }
 
 
-.messages-area::-webkit-scrollbar { width: 8px; }
-.messages-area::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 6px; }
+.messages-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages-area::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
 
 
 @media (max-width: 576px) {
-  .chat-card { border-radius: 12px; }
-  .logo-img { height: 36px; width: 36px; }
+  .chat-card {
+    border-radius: 12px;
+  }
+
+  .logo-img {
+    height: 36px;
+    width: 36px;
+  }
 }
 
 
 .messages-area {
   display: flex;
   flex-direction: column;
-  gap: 10px;              
-  background: rgba(255,255,255,0.7);
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.7);
   padding: 18px;
   overflow-y: auto;
 }
 
 
 .msg {
-  display: block;         
+  display: block;
   padding: 10px 14px;
   border-radius: 18px;
   max-width: 80%;
   line-height: 1.4;
   font-size: 15px;
   word-wrap: break-word;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 
 .msg.user {
   background: linear-gradient(135deg, #007bff, #00c6ff);
   color: #fff;
-  margin-left: auto;      
+  margin-left: auto;
   margin-right: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -170,11 +187,11 @@
 .msg.bot {
   background: #ffffff;
   color: #222;
-  margin-right: auto;     
+  margin-right: auto;
   margin-left: 6px;
   border-bottom-left-radius: 6px;
 }
 
-.box{
+.box {
   margin-top: 40px;
 }
