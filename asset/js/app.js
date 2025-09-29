@@ -1,5 +1,4 @@
-
-const API_KEY = "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";
+const API_KEY = "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";
 
 const messagesDiv = document.getElementById("messages");
 const inputEl = document.getElementById("input");
@@ -41,11 +40,15 @@ function createBotMessageContainer() {
   return botMsg;
 }
 
-
+function formatTimestamp() {
+  const d = new Date();
+  return d.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+}
 
 function showBotMessage(text) {
   const botMsg = createBotMessageContainer();
   appendMessageElement(botMsg);
+
 
   let i = 0;
   function typeWriter() {
@@ -53,8 +56,9 @@ function showBotMessage(text) {
       botMsg.textContent += text.charAt(i);
       i++;
       messagesDiv.scrollTop = messagesDiv.scrollHeight;
-      setTimeout(typeWriter, 20);
+      setTimeout(typeWriter, 10);
     } else {
+ 
       const stamp = document.createElement("small");
       stamp.textContent = formatTimestamp();
       botMsg.appendChild(stamp);
@@ -66,6 +70,7 @@ function showBotMessage(text) {
 async function sendMessage() {
   const userText = inputEl.value.trim();
   if (!userText) return;
+
   const userMsgEl = createUserMessage(userText);
   appendMessageElement(userMsgEl);
   const ts = document.createElement("small");
@@ -75,6 +80,7 @@ async function sendMessage() {
   inputEl.value = "";
   inputEl.focus();
 
+ 
   const loadingBot = createBotMessageContainer();
   loadingBot.textContent = "Typing...";
   appendMessageElement(loadingBot);
@@ -91,6 +97,8 @@ async function sendMessage() {
         messages: [{ role: "user", content: userText }]
       })
     });
+
+    
 
     messagesDiv.removeChild(loadingBot);
 
